@@ -16,6 +16,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     min-height: 100vh;
+    overflow-x: hidden; /* esconde o scroll horizontal */
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -213,6 +214,20 @@ nav a.active {
        top : negativo = sobe        / positivo = desce  */
     top: 120px;
     right: -360px;
+}
+
+/* flor sobrepondo no canto inferior direito */
+.hero-img-wrap .artdot3-overlay {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    width: 400px;          /* ← AJUSTA O TAMANHO AQUI */
+    height: auto;
+    /* ── POSIÇÃO ──
+       left: negativo = vai pra fora / positivo = entra
+       top : negativo = sobe        / positivo = desce  */
+    bottom: -727px;
+    left: 760px;
 }
 
 .hero-text {
